@@ -26,10 +26,23 @@ reader.question("What would you like to calculate?", function(input){
 		console.log(num1 / num2);
 	} else if (mathSymbol === `*`){
 		console.log(num1 * num2);
-	} else {
+	} else if (mathSymbol === `sr`) {
 		console.log(Math.sqrt(num1));
+	} else if (mathSymbol === `**`) {
+		console.log(num1 ** 2);
+	} else if (mathSymbol === `cube`) {
+		console.log(num1 ** 3);
+	} else if (mathSymbol === `pwr`) {
+		console.log(num1 ** num2);
+	} else if (mathSymbol === `rem`) {
+		console.log(num1 % num2);
+	} else {
+		console.log('That is not a proper formula!');
 	}
 	
+
+
+
 
 	// This line closes the connection to the command line interface.
 	reader.close()
