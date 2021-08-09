@@ -37,11 +37,9 @@ reader.question("What would you like to calculate?", function(input){
 	} else if (mathSymbol === `rem`) {
 		console.log(num1 % num2);
 	} else {
-		console.log('That is not a proper formula!');
+		console.log(`That is not a proper formula! Please use +, -, /, *, sr(square root), ** (squared), cube (cubed), pwr (to the power of), or rem (for ramainder)`);
 	}
 	
-
-
 
 
 	// This line closes the connection to the command line interface.
